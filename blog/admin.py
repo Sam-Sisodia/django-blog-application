@@ -32,3 +32,6 @@ class Share_Blog_admin(admin.ModelAdmin):
     list_display=["id","blog","token","email","date_time"
                   
     ]
+
+
+    
