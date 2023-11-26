@@ -19,7 +19,7 @@
           {% for  blog in all_blogs %}
           
             <h2><a href="{% url 'detail-page' blog.id %}">{{ blog.title }}</a></h2>
-            <p>Published {{ blog.date_time }} by  {{user.username}}</p>
+            <p>Published {{ blog.date_time }} by  admin </p>
             {{blog.description}} <br><br><br>
             {% endfor %}
         </article>
