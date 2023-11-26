@@ -103,6 +103,13 @@ def Blog_Detail(request,id):
 
 
 
+def logout_user(request):
+    logout(request)
+    return redirect('login')
+
+
+
+
 from django.urls import reverse
 @login_required(login_url='login')
 def Commnet_Blog(request,id):

@@ -23,27 +23,11 @@
                 <a class="navbar-brand" href="#">
                   
                 </a>
-
-    
             </div>
-            <li class="nav-item dropdown " style="list-style-type:none;">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <!-- <img src="{% static 'static/img/download.jpeg' %}" class="rounded-circle" alt="" width="90" height="60"> -->
-            Logged User
-                
-                </a>
-                <ul  class="dropdown-menu" aria-labelledby="navbarDropdown">
-                
-                  <li><a class="dropdown-item" href="#">{{user.email}}</a></li>
-                  <li><a class="dropdown-item" href="/login">Logout</a></li>
-                 
-                </ul>
-              </li>
-            
-            
+                <a href="{% url 'logout' %}">Logout</a>
+               
         </div>
 
-        
         
       </nav>
       <center>
