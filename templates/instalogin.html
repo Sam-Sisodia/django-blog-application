@@ -59,8 +59,8 @@
   <h1>Instagram</h1>
   <form method="post">
     {% csrf_token %}
-  <input type="text" class="login-input" name="" placeholder="Phone number, username, or email">
-  <input type="password"  class="login-input" placeholder="Password"  name="password">
+  <input type="text" class="login-input" name="username" placeholder="Phone number, username, or email" required>
+  <input type="password"  class="login-input" placeholder="Password"  name="password" required>
   <button type="submit" class="login-button">Log in</button>
   </form>
   <div class="login-footer">
