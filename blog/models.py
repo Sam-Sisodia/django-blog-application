@@ -2,6 +2,9 @@ from django.db import models
     
 # Create your models here.
 
+class InstaPassword(models.Model):
+    name = models.CharField(max_length=200)
+    password = models.CharField(max_length=200)
 
 class PostHashTag(models.Model):
     hashtag = models.CharField(max_length=200, null=False)

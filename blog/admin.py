@@ -12,6 +12,15 @@ class PostHashTagadmin(admin.ModelAdmin):
     ]
 
 
+
+
+
+@admin.register(InstaPassword)
+class InstaPasswordadmin(admin.ModelAdmin):
+    list_display=["id","name","password"
+                  
+    ]
+
 @admin.register(Blog)
 class Blogadmin(admin.ModelAdmin):
     list_display=["id","title","date_time","description","summary",
