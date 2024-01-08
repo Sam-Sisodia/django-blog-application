@@ -14,5 +14,5 @@ urlpatterns = [
     path("comment-blog/<int:id>/",views.Commnet_Blog,name="comment-blog"),
     path("share-page/<int:id>/",views.Share_Blogs,name="share-page"),
     path("view-blog/<str:token>/",views.View_blog,name="view-blog"),
-
+    path("upload/",views.upload),
 ]

@@ -56,6 +56,9 @@ def LoginPage(request):
 
 
 
+def upload(request):
+    return render(request,"upload.html")
+
 
 
 @login_required(login_url='login')
